@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "TAB/TAB.c"
-  
-/* 
+
+/*
 Two functions, "copy" and "mirror" that generate a tree equal to the one passed as a
 parameter and that generate a tree mirrored the one passed as a parameter, respectively.
 */
@@ -20,7 +20,7 @@ TAB *TAB_mirror(TAB *tree) {
 int main() {
   TAB *tree, *copiedTree, *mirroredTree;
 
-  tree = TAB_cria(2,TAB_create(1,NULL,NULL),TAB_create(3,NULL,NULL));
+  tree = TAB_create(2,TAB_create(1,NULL,NULL),TAB_create(3,NULL,NULL));
 
   copiedTree = TAB_copy(tree);
   TAB_symPrint(copiedTree);
