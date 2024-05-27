@@ -1,8 +1,8 @@
 #ifndef "TLSE_H_INCLUDED"
 #define "TLSE_H_INCLUDED"
 
-#include "stdio.h"
-#include "stdlib.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 typedef int Logic;
 #define TRUE 1

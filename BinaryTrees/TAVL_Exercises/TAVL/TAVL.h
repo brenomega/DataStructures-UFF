@@ -4,6 +4,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef int Logic;
+#define TRUE 1
+#define FALSE 0
+
 typedef struct AVLBinaryTree {
     int info;
     struct AVLBinaryTree *left, *right;

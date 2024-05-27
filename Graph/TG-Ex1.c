@@ -1,6 +1,6 @@
 Logic canBecomeBinaryTree(TG *graph, TLSE *list, int *span, int *length) {
     if (!graph) return TRUE;
-    
+
     int count = 0;
     NB *neighbor = graph->firstNB;
     while (neighbor != NULL) {
@@ -17,7 +17,7 @@ Logic canBecomeBinaryTree(TG *graph, TLSE *list, int *span, int *length) {
         return FALSE;
     }
     ++*span;
-    
+
     return canBecomeBinaryTree(graph->next, nodes);
 }
 
